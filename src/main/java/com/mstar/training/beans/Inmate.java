@@ -23,7 +23,7 @@ public class Inmate {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "INMATE_ID")
-	private Long inmateId;
+	private Long inmateID;
 	
 	@Enumerated(STRING)
 	@Column(name = "INMATE_CATEGORY")
@@ -49,11 +49,11 @@ public class Inmate {
 	
 
 	public Long getInmateId() {
-		return inmateId;
+		return inmateID;
 	}
 
-	public void setInmateId(Long inmateId) {
-		this.inmateId = inmateId;
+	public void setInmateId(Long inmateID) {
+		this.inmateID = inmateID;
 	}
 
 	public InmateCategory getCategory() {

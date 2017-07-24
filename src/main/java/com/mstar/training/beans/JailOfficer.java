@@ -17,7 +17,7 @@ public class JailOfficer {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "OFFICER_ID")
-	private Long officerId;
+	private Long officerID;
 	
 	@Column(name = "OFFICER_NAME")
 	private String officerName;
@@ -34,11 +34,11 @@ public class JailOfficer {
 	private Jail jail;
 	
 	public Long getOfficerId() {
-		return officerId;
+		return officerID;
 	}
 
-	public void setOfficerId(Long officerId) {
-		this.officerId = officerId;
+	public void setOfficerId(Long officerID) {
+		this.officerID = officerID;
 	}
 
 	public String getOfficerName() {

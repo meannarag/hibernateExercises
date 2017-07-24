@@ -17,7 +17,7 @@ public class Jail {
 	@Id
 	@GeneratedValue(strategy = AUTO)
 	@Column(name = "JAIL_ID")
-	private Long jailId;
+	private Long jailID;
 	
 	@Column(name = "JAIL_NAME")
 	private String name;
@@ -28,7 +28,7 @@ public class Jail {
 	@Column(name = "JAIL_REGION")
 	private String region;
 	
-	@Column(name = "CAPACITY")
+	@Column(name = "JAIL_CAPACITY")
 	private Integer capacity;
 	
 	@OneToMany(mappedBy="jail")
@@ -38,11 +38,11 @@ public class Jail {
 	private List<Inmate> inmates;
 
 	public Long getJailId() {
-		return jailId;
+		return jailID;
 	}
 
-	public void setJailId(Long jailId) {
-		this.jailId = jailId;
+	public void setJailId(Long jailID) {
+		this.jailID = jailID;
 	}
 
 	public String getName() {
