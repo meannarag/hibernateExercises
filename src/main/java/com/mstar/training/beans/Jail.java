@@ -10,6 +10,29 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+/**
+ * 	Your score: (YES is 1 point)
+ *
+ *	Has Name: YES
+ *	Has Address: YES (as location)
+ *	Has Type: NO
+ *	Type is Enum: N/A
+ *	Has Region: YES
+ *	Region is Enum: NO
+ *  Has Capacity: YES
+ *  Has Officers: YES
+ *  Correct Relationship w/ Officers: YES
+ *  Has Inmates: YES
+ *  Correct Relationship w/ Inmates: YES
+ *  
+ *  Remarks:
+ *  1. The list of Regions in the Philippines is relatively static, an Enum would have been a better choice.
+ *  2. The type of the Jail was specified in the first paragraph specifically, '...and operation of all district, city and municipal jails in the Philippines...'
+ *  
+ *  Final Score: 8 of 11
+ *
+ */
+
 @Entity
 @Table(name = "JAIL")
 public class Jail {

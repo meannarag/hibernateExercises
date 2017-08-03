@@ -16,6 +16,25 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 
+/**
+ *	Your score: (YES is 1 point)
+ *
+ *	Has Jail: YES
+ *	Correct Relationship w/ Jail: YES
+ *	Has Type: YES (as Category)
+ *	Type is Enum: YES
+ *	Has Name: NO
+ *	Has Control Number: YES
+ *	Control Number is Unique: YES
+ *	Has Commitment Date: YES (as DateArrived)
+ *	Commitment Date is Timestamp: YES
+ *
+ *	Remarks:
+ *	1. The name of an inmate was not explicitly specified but its something that's intrinsic in all human beings
+ *
+ *	Final Score: 8 of 9
+ */
+
 @Entity
 @Table(name = "INMATE")
 public class Inmate {
